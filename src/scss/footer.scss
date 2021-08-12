@@ -1,0 +1,39 @@
+.footer {
+  padding: 85px 0 86px;
+  background-color: #FAFAFA;
+  &__title {
+    @include font(bold, 18px, 22px);
+    margin-bottom: 33px;
+  }
+  &__li, &__li-serv {
+
+    list-style-type: none;
+    @include font(normal, 12px, 150%);
+
+
+  }
+  &__li-serv {
+    text-transform: capitalize;
+  }
+  &__contact {
+    margin-bottom: 11px;
+    color: #101010;
+    @include font(normal, 12px, 14px);
+  }
+  &__icons {
+    display: flex;
+    column-gap: 16px;
+    margin-top: 9px;
+  }
+  &__icon {
+    list-style-type: none;
+  }
+  &__a {
+    color: #101010;
+
+  }
+  &__copyright {
+    @include font(normal, 12px, 14px);
+    margin: 86px  0 0 15px;
+  }
+}

@@ -1,0 +1,79 @@
+.contact {
+  padding: 117px 0 78px;
+
+  &__title {
+    @include font(600, 36px, 43px);
+    margin-bottom: 53px;
+  }
+
+  &__desc {
+    @include font(normal, 14px, 140%);
+  }
+
+  &__form {
+    width: 540px;
+
+  }
+
+  &__block {
+    margin-bottom: 24px;
+  }
+
+  &__input-text {
+    padding: 20px 31px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    width: 46.8%;
+
+    &-1 {
+      margin-right: 30px;
+    }
+
+    &::placeholder {
+      @include font(normal, 16px, 19px);
+      color: rgba(19, 39, 67, 0.5);
+    }
+  }
+
+  &__input-tel {
+    width: 100%;
+    padding: 20px 31px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+
+    &::placeholder {
+      @include font(normal, 16px, 19px);
+      color: rgba(19, 39, 67, 0.5);
+    }
+  }
+
+  &__select {
+    @include font(normal, 16px, 19px);
+    width: 100%;
+    padding: 20px 31px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    color: rgba(19, 39, 67, 0.5);
+    text-transform: capitalize;
+  }
+
+  &__btn {
+    padding: 16px 34px;
+    background: $primary-color;
+    border: 1.5px solid $primary-color;
+    border-radius: 6px;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.7s;
+    cursor: pointer;
+    @include font(normal, 14px, 17px);
+
+    &:hover {
+      background-color: white;
+      color: $primary-color;
+      transition: 0.7s;
+    }
+  }
+
+
+}
